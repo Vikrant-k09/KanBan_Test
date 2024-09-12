@@ -1,0 +1,154 @@
+.app-container {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 6px;
+  margin: 0px;
+  margin-bottom: 20px;
+
+  background-color: white;
+}
+
+.dropdown-menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+.display-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+  background-color: white;
+}
+
+.dropdown-arrow {
+  margin-left: 5px;
+  transition: transform 0.2s ease;
+}
+
+.dropdown-menu-container:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 4px;
+  padding: 10px;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sort-dropdown,
+.display-sort-dropdown {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
+
+.grouping,
+.ordering {
+  font-size: 14px;
+  font-weight: 600;
+  color: #787486;
+  margin: 0;
+}
+
+.dropdown,
+.status {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 16px;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.dropdown {
+  background: url('data:image/svg+xml;base64,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.99583 12.75C9.89583 12.75 9.80208 12.7326 9.71458 12.6979C9.62708 12.6632 9.5486 12.6111 9.47916 12.5416L5.52791 8.59038C5.37041 8.43288 5.29513 8.25343 5.30208 8.05204C5.30902 7.85065 5.38888 7.67357 5.54166 7.52079C5.69444 7.36801 5.87152 7.29163 6.07291 7.29163C6.2743 7.29163 6.45138 7.36801 6.60416 7.52079L9.99999 10.9375L13.4167 7.52079C13.5694 7.36801 13.7465 7.2951 13.9479 7.30204C14.1493 7.30899 14.3264 7.38885 14.4792 7.54163C14.6319 7.6944 14.7083 7.87149 14.7083 8.07288C14.7083 8.27426 14.6296 8.45329 14.4721 8.60996L10.5208 12.5416C10.4458 12.6111 10.3646 12.6632 10.2771 12.6979C10.1896 12.7326 10.0958 12.75 9.99583 12.75Z" fill="#535961"/></svg>');
+}
+
+.display-icon {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.header-right {
+  cursor: pointer;
+}
+
+select {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.99583 12.75C9.89583 12.75 9.80208 12.7326 9.71458 12.6979C9.62708 12.6632 9.5486 12.6111 9.47916 12.5416L5.52791 8.59038C5.37041 8.43288 5.29513 8.25343 5.30208 8.05204C5.30902 7.85065 5.38888 7.67357 5.54166 7.52079C5.69444 7.36801 5.87152 7.29163 6.07291 7.29163C6.2743 7.29163 6.45138 7.36801 6.60416 7.52079L9.99999 10.9375L13.4167 7.52079C13.5694 7.36801 13.7465 7.2951 13.9479 7.30204C14.1493 7.30899 14.3264 7.38885 14.4792 7.54163C14.6319 7.6944 14.7083 7.87149 14.7083 8.07288C14.7083 8.27426 14.6296 8.45329 14.4721 8.60996L10.5208 12.5416C10.4458 12.6111 10.3646 12.6632 10.2771 12.6979C10.1896 12.7326 10.0958 12.75 9.99583 12.75Z' fill='%23535961'/%3E%3C/svg%3E%0A");
+  padding: 15px;
+  border-radius: 3px;
+  height: 40px;
+  color: black;
+  padding-right: 30px;
+  font-size: 14px;
+  border-color: grey;
+  position: relative;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background-position: right 5px top 50%;
+}
+
+.display-drop-down,
+.sort-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.display-drop-down {
+  margin-right: 0px;
+}
+
+.grouping,
+.ordering {
+  font-size: 14px;
+  font-weight: 600;
+  color: #787486;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.column-left {
+  display: flex;
+  text-align: center;
+}
+.count {
+  margin-left: 10px;
+}
+body {
+  background-color: buttonface;
+  margin: 0px;
+  max-width: 100%;
+}
