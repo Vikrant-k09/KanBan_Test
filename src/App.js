@@ -35,7 +35,7 @@ function App() {
     localStorage.setItem("sorting", newSorting);
   };
 
-  // Group and sort the tickets based on the selected options
+ 
   const groupedTickets = groupTickets(tickets, grouping, users);
   const sortedTickets = sortTickets(groupedTickets, sorting);
 
