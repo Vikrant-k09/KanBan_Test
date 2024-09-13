@@ -175,3 +175,60 @@
   display: block;
   margin: auto;
 }
+
+@media (max-width: 1024px) {
+  
+  .kanban-board {
+    flex-wrap: wrap; 
+    justify-content: center;
+  }
+
+  .column {
+    min-width: 300px;
+    flex: 1 1 45%;
+    margin-bottom: 20px; 
+  }
+}
+
+@media (max-width: 768px) {
+ 
+  .dropdown-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .kanban-board {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .column {
+    min-width: 100%; 
+    padding: 15px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .dropdown {
+    width: 100%;
+    padding: 6px 10px;
+  }
+
+  .column {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 8px;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
