@@ -152,3 +152,35 @@ body {
   margin: 0px;
   max-width: 100%;
 }
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dropdown-menu-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown-content {
+    min-width: 100%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .display-button {
+    padding: 6px 8px;
+    width: 100%;
+  }
+
+  .dropdown-menu-container {
+    text-align: center;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+}
